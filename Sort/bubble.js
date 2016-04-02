@@ -22,3 +22,12 @@ function bubble(arr) {
 //第二轮,比较除了最后一个的元素的其他元素，重复步骤一
 //时间复杂度：O(n^2);
 bubble([100, 30, 21, 50, 60, 80, 45, 77]);
+
+(function() {
+    var arr = [];
+    for (var i = 0; i < 1000; i++) {
+        arr.push(Math.ceil(Math.random(1) * 100));
+    }
+    bubble(arr);
+    console.log((new Date()).toString());
+})();
