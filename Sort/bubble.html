@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>冒泡排序可视化</title>
+    <!--<script src="bubble.js"></script>-->
+    <style type="text/css">
+    *{
+        border: 0px;
+        margin: 0px;
+        padding: 0px;
+    }
+        #canvas {
+            width: 1000px;
+            height: 600px;
+            border: 1px solid black;
+            /*margin-left: 200px;*/
+        }
+    </style>
+    <script type="text/javascript" src="draw.js"></script>
+    <script>
+        window.onload = function(){
+            init('canvas', [10,30,50,21,22,45,33,60,33,22,18]);
+        };
+    </script>
+</head>
+
+<body>
+    <canvas id="canvas"></canvas>
+</body>
+
+</html>
